@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Aung Hla Oo — Software Engineer & Full-Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="#hero" class="logo">
+          <i class="fa-solid fa-code"></i> Min Aung Hla Oo
+        </a>
+
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle dark/light theme"
+          >
+            <i id="theme-icon" class="fa-solid fa-sun"></i>
+          </button>
+          <button
+            id="menu-btn"
+            class="menu-btn"
+            aria-label="Open navigation drawer"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="pulse-dot"></span> Available for Engineering Roles &
+            Freelance
+          </div>
+          <h1 class="hero-title">
+            Building robust platforms & <span>mobile apps</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span>I am a</span>
+            <span id="typed-text"></span>
+          </div>
+          <p class="hero-desc">
+            Specialized in engineering full-stack web architectures with Next.js
+            & Laravel, and developing high-performance native apps using React
+            Native.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+          <div class="social-icons">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="mailto:minaunghlaoo.dev@example.com" aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Exact User Provided Hero Card Snippet -->
+        <div class="hero-img-wrapper">
+          <div class="hero-card">
+            <div class="hero-avatar">
+              <img
+                src="https://placehold.co/200x200/1e293b/6366f1?text=MAH"
+                alt="Min Aung Hla Oo"
+                onerror="
+                  this.src =
+                    'https://placehold.co/200x200/1e293b/6366f1?text=MAH'
+                "
+              />
+            </div>
+            <h3
+              style="
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 0.25rem;
+              "
+            >
+              Min Aung Hla Oo
+            </h3>
+            <p
+              style="
+                color: var(--accent);
+                font-size: 0.9rem;
+                font-weight: 500;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Software Engineer
+            </p>
+            <div
+              style="
+                display: flex;
+                gap: 0.5rem;
+                justify-content: center;
+                flex-wrap: wrap;
+              "
+            >
+              <span class="tag">Next.js</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">React Native</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">
+          Passionate software engineer focused on building clean, user-centric,
+          and scalable digital solutions.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>Full-Stack Architecture</h3>
+          <p>
+            Designing modern enterprise web platforms using Next.js and PHP
+            Laravel with clean REST APIs and modular database structures.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Mobile Application Dev</h3>
+          <p>
+            Crafting cross-platform mobile apps using React Native & Expo,
+            delivering native performance and fluid user experiences.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>Scholarships & Honors</h3>
+          <p>
+            Selected for advanced engineering scholarships, undergoing rigorous
+            training in system design, algorithms, and agile methodologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div>
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Completed Projects</div>
+        </div>
+        <div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div>
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Tech Stack Mastered</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Tech Proficiencies</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">
+          Tools, languages, and frameworks I leverage to bring product visions
+          to life.
+        </p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterSkills('all', this)">
+          All Skills
+        </button>
+        <button class="filter-btn" onclick="filterSkills('web', this)">
+          Frontend & Web
+        </button>
+        <button class="filter-btn" onclick="filterSkills('mobile', this)">
+          Mobile
+        </button>
+        <button class="filter-btn" onclick="filterSkills('backend', this)">
+          Backend
+        </button>
+        <button class="filter-btn" onclick="filterSkills('tools', this)">
+          Tools & DevOps
+        </button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <div class="skill-item web tools" data-category="web tools">
+          <div class="skill-icon"><i class="fa-solid fa-n"></i></div>
+          <h4>Next.js</h4>
+          <p>React Framework</p>
+        </div>
+
+        <div class="skill-item backend web" data-category="backend web">
+          <div class="skill-icon">
+            <i class="fa-brands fa-laravel" style="color: #ef4444"></i>
+          </div>
+          <h4>PHP / Laravel</h4>
+          <p>MVC & REST APIs</p>
+        </div>
+
+        <div class="skill-item mobile" data-category="mobile">
+          <div class="skill-icon">
+            <i class="fa-brands fa-react" style="color: #06b6d4"></i>
+          </div>
+          <h4>React Native</h4>
+          <p>Mobile Apps</p>
+        </div>
+
+        <div class="skill-item backend" data-category="backend">
+          <div class="skill-icon">
+            <i class="fa-brands fa-python" style="color: #f59e0b"></i>
+          </div>
+          <h4>Python / Django</h4>
+          <p>Scalable Backends</p>
+        </div>
+
+        <div class="skill-item web" data-category="web">
+          <div class="skill-icon">
+            <i class="fa-brands fa-js" style="color: #eab308"></i>
+          </div>
+          <h4>JavaScript (ES6+)</h4>
+          <p>Core Frontend</p>
+        </div>
+
+        <div class="skill-item tools" data-category="tools">
+          <div class="skill-icon">
+            <i class="fa-brands fa-git-alt" style="color: #f97316"></i>
+          </div>
+          <h4>Git & GitHub</h4>
+          <p>Version Control</p>
+        </div>
+
+        <div class="skill-item backend" data-category="backend">
+          <div class="skill-icon">
+            <i class="fa-solid fa-database" style="color: #3b82f6"></i>
+          </div>
+          <h4>MySQL & Postgres</h4>
+          <p>Relational Databases</p>
+        </div>
+
+        <div class="skill-item web" data-category="web">
+          <div class="skill-icon">
+            <i class="fa-brands fa-css3-alt" style="color: #2563eb"></i>
+          </div>
+          <h4>CSS3 / HTML5</h4>
+          <p>Custom Responsive UI</p>
+        </div>
+
+        <div class="skill-item tools" data-category="tools">
+          <div class="skill-icon">
+            <i class="fa-brands fa-docker" style="color: #0284c7"></i>
+          </div>
+          <h4>Docker</h4>
+          <p>Containerization</p>
+        </div>
+
+        <div class="skill-item tools" data-category="tools">
+          <div class="skill-icon">
+            <i class="fa-brands fa-figma" style="color: #ec4899"></i>
+          </div>
+          <h4>Figma</h4>
+          <p>UI Prototyping</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">
+          A selection of enterprise web platforms, mobile applications, and
+          backend systems I have engineered.
+        </p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">
+          All Works
+        </button>
+        <button class="filter-btn" onclick="filterProjects('nextjs', this)">
+          Next.js
+        </button>
+        <button class="filter-btn" onclick="filterProjects('laravel', this)">
+          Laravel
+        </button>
+        <button class="filter-btn" onclick="filterProjects('mobile', this)">
+          React Native
+        </button>
+        <button class="filter-btn" onclick="filterProjects('django', this)">
+          Django
+        </button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="nextjs">
+          <div class="project-img">
+            <img
+              src="https://placehold.co/600x400/1e293b/6366f1?text=Next.js+Analytics"
+              alt="Next.js Dashboard"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/1e293b/6366f1?text=Project'
+              "
+            />
+            <span class="project-tag-badge">Next.js</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">CloudPulse Analytics Dashboard</h3>
+              <p class="project-desc">
+                Real-time enterprise web analytics portal featuring server-side
+                rendering, dynamic charts, and REST API integration.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Chart.js</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#projects" class="project-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                Preview</a
+              >
+              <a
+                href="#projects"
+                class="project-link"
+                style="color: var(--text-secondary)"
+                ><i class="fa-brands fa-github"></i> Repository</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="laravel">
+          <div class="project-img">
+            <img
+              src="https://placehold.co/600x400/1e293b/ef4444?text=Laravel+Portal"
+              alt="Laravel Portal"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/1e293b/ef4444?text=Project'
+              "
+            />
+            <span class="project-tag-badge" style="color: #f87171"
+              >Laravel</span
+            >
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">EduSuite Campus Management</h3>
+              <p class="project-desc">
+                Complete administrative CMS engineered with PHP Laravel,
+                providing role-based access control and automated reports.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Blade</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#projects" class="project-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                Preview</a
+              >
+              <a
+                href="#projects"
+                class="project-link"
+                style="color: var(--text-secondary)"
+                ><i class="fa-brands fa-github"></i> Repository</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-img">
+            <img
+              src="https://placehold.co/600x400/1e293b/06b6d4?text=React+Native+App"
+              alt="React Native App"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/1e293b/06b6d4?text=Project'
+              "
+            />
+            <span class="project-tag-badge" style="color: #22d3ee"
+              >React Native</span
+            >
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">QuickMart Mobile E-Commerce</h3>
+              <p class="project-desc">
+                Cross-platform mobile application supporting instant cart sync,
+                payment gateway integration, and order tracking.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Expo</span>
+                <span class="tag">Redux</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#projects" class="project-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                Preview</a
+              >
+              <a
+                href="#projects"
+                class="project-link"
+                style="color: var(--text-secondary)"
+                ><i class="fa-brands fa-github"></i> Repository</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="django">
+          <div class="project-img">
+            <img
+              src="https://placehold.co/600x400/1e293b/f59e0b?text=Django+REST+API"
+              alt="Django API"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/1e293b/f59e0b?text=Project'
+              "
+            />
+            <span class="project-tag-badge" style="color: #fbbf24">Django</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">TaskFlow API & Workflow Engine</h3>
+              <p class="project-desc">
+                Secure microservice REST API built with Django REST Framework
+                featuring JWT tokens and asynchronous background tasks.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#projects" class="project-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                Preview</a
+              >
+              <a
+                href="#projects"
+                class="project-link"
+                style="color: var(--text-secondary)"
+                ><i class="fa-brands fa-github"></i> Repository</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="nextjs">
+          <div class="project-img">
+            <img
+              src="https://placehold.co/600x400/1e293b/a855f7?text=Next.js+SaaS"
+              alt="Next.js SaaS"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/1e293b/a855f7?text=Project'
+              "
+            />
+            <span class="project-tag-badge" style="color: #c084fc"
+              >Next.js</span
+            >
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">DevSpace Collaboration Hub</h3>
+              <p class="project-desc">
+                Developer community portal with article publishing, markdown
+                editing, and real-time commentary threads.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Prisma</span>
+                <span class="tag">Tailwind UI</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#projects" class="project-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                Preview</a
+              >
+              <a
+                href="#projects"
+                class="project-link"
+                style="color: var(--text-secondary)"
+                ><i class="fa-brands fa-github"></i> Repository</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-img">
+            <img
+              src="https://placehold.co/600x400/1e293b/10b981?text=Health+Tracker+App"
+              alt="Health App"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/1e293b/10b981?text=Project'
+              "
+            />
+            <span class="project-tag-badge" style="color: #34d399"
+              >React Native</span
+            >
+          </div>
+          <div class="project-body">
+            <div>
+              <h3 class="project-title">PulseTrack Fitness Tracker</h3>
+              <p class="project-desc">
+                Mobile health logging application featuring step tracking,
+                custom habit goals, and offline database persistence.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">AsyncStorage</span>
+                <span class="tag">Victory Charts</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#projects" class="project-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                Preview</a
+              >
+              <a
+                href="#projects"
+                class="project-link"
+                style="color: var(--text-secondary)"
+                ><i class="fa-brands fa-github"></i> Repository</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-header">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">
+          My professional trajectory, technical training, and academic
+          background.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2024 — PRESENT</span>
+          <h3 class="timeline-title">Senior Software Engineer</h3>
+          <div class="timeline-company">Freelance & Tech Consultancy</div>
+          <p class="timeline-desc">
+            Leading full-stack web and mobile application engineering projects
+            using Next.js, Laravel, and React Native. Mentoring junior
+            developers in code quality and CI/CD pipelines.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2022 — 2024</span>
+          <h3 class="timeline-title">Full-Stack Web Developer</h3>
+          <div class="timeline-company">Global Tech Solutions</div>
+          <p class="timeline-desc">
+            Architected RESTful microservices with PHP Laravel and Django
+            backends while delivering modern user interfaces using Next.js and
+            JavaScript.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2021 — 2022</span>
+          <h3 class="timeline-title">Software Engineering Scholar</h3>
+          <div class="timeline-company">Advanced Tech Fellowship</div>
+          <p class="timeline-desc">
+            Awarded full technical scholarship covering advanced software
+            engineering principles, enterprise database management, and mobile
+            cross-platform paradigms.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2020 — 2024</span>
+          <h3 class="timeline-title">B.S. in Computer Science</h3>
+          <div class="timeline-company">University Studies</div>
+          <p class="timeline-desc">
+            Graduated with top academic standing, specializing in Software
+            Systems Architecture, Data Structures, Algorithms, and Database
+            Management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">
+          Interested in starting a project or discussing technical
+          opportunities? Feel free to write me a line!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Contact Details</h3>
+          <p>
+            I am available for full-time engineering roles, remote contracts,
+            and freelance projects.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <label>Direct Email</label>
+                <a href="mailto:minaunghlaoo.dev@example.com"
+                  >minaunghlaoo.dev@example.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <label>Phone / Telegram</label>
+                <a href="tel:+959123456789">+95 9 123 456 789</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <label>Location</label>
+                <span>Mawlamyine, Mon State, Myanmar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-icons">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Min Aung Hla Oo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              class="form-control"
+              placeholder="Project Inquiry / Job Opportunity"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              class="form-control"
+              placeholder="Hi Min Aung Hla Oo, I would like to discuss..."
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; justify-content: center"
+          >
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 Min Aung Hla Oo. All rights reserved.</p>
+        <p>
+          Built with
+          <i class="fa-solid fa-heart" style="color: #ec4899"></i> using HTML,
+          Custom CSS & Vanilla JS.
+        </p>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
